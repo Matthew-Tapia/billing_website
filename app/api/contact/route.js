@@ -42,9 +42,18 @@ export async function POST(request) {
       replyTo: email,
     };
 
-    // Send email
-    const info = await transporter.sendMail(mailOptions);
-    console.log("Message sent: %s", info.messageId);
+    // Send email using Promise wrapper for serverless compatibility
+    await new Promise((resolve, reject) => {
+      transporter.sendMail(mailOptions, (err, info) => {
+        if (err) {
+          console.error("Email sending error:", err);
+          reject(err);
+        } else {
+          console.log("Message sent: %s", info.messageId);
+          resolve(info);
+        }
+      });
+    });
 
     // Optional: Send an acknowledgement email to the user who submitted the form
     if (process.env.SEND_ACKNOWLEDGEMENT === "true") {
@@ -63,7 +72,18 @@ export async function POST(request) {
         `,
       };
 
-      await transporter.sendMail(acknowledgementMail);
+      // Wrap acknowledgement email in Promise too
+      await new Promise((resolve, reject) => {
+        transporter.sendMail(acknowledgementMail, (err, info) => {
+          if (err) {
+            console.error("Acknowledgement email error:", err);
+            reject(err);
+          } else {
+            console.log("Acknowledgement email sent: %s", info.messageId);
+            resolve(info);
+          }
+        });
+      });
     }
 
     return NextResponse.json({
