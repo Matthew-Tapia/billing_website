@@ -11,13 +11,14 @@ export default function Home() {
               className="text-3xl font-semibold mb-6"
               style={{ color: "var(--secondary)" }}
             >
-              Professional Medical Billing Solutions for US Healthcare Providers
+              Trusted Medical Billing Solutions for Healthcare Providers
             </h1>
             <p className="text-black text-base leading-relaxed">
-              Codex Billing delivers accurate, efficient medical billing
-              services for US providers. Maximize revenue, reduce denials, and
-              streamline operations with our expert team. Let us handle your
-              billing for seamless success!
+              Codex Medical Management specializes in delivering precise,
+              reliable medical billing services tailored to your practice. Our
+              experienced team helps maximize your revenue, minimize denials,
+              and streamline billing operations. Partner with us for seamless,
+              compliant, and efficient billing support!
             </p>
           </div>
           <div className="flex-1 flex justify-center">
@@ -112,11 +113,12 @@ export default function Home() {
                 style={{ backgroundColor: "var(--tertiary)" }}
               ></div>
               <p className="text-gray-700 text-base leading-relaxed mb-4">
-                Codex Billing delivers secure, flexible, and end-to-end medical
-                billing solutions tailored for healthcare providers across the
-                U.S. With years of experience in Revenue Cycle Management (RCM),
-                we help practices streamline workflows, reduce denials, and
-                boost reimbursements.
+                Codex Medical Management provides secure, flexible, and
+                comprehensive medical billing services tailored to healhcare
+                providers across the U.S. Backed by over{" "}
+                <b>25 years of combined industry experience</b>, our team has
+                helped orgnaizations boost revenue by up to 25% through
+                efficient workflows and reduced claim denials.
               </p>
               <p className="text-gray-700 text-base leading-relaxed">
                 Our expert team understands that no two practices are alike,
@@ -132,10 +134,10 @@ export default function Home() {
       </section>
 
       {/* Third Section - What We Do */}
-      <section className="w-full py-16">
+
+      {/* <section className="w-full py-16">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center justify-center gap-12 w-full max-w-5xl mx-auto">
-            {/* Image on the left */}
             <div className="flex-1 flex justify-center">
               <div className="relative">
                 <Image
@@ -152,7 +154,6 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Text on the right */}
             <div className="flex-1 max-w-md">
               <h3
                 className="text-lg font-semibold mb-2"
@@ -172,25 +173,24 @@ export default function Home() {
                 style={{ backgroundColor: "var(--tertiary)" }}
               ></div>
               <p className="text-gray-700 text-base leading-relaxed mb-4">
-                At Codex Medical Management, we offer comprehensive Revenue Management
-                Services designed to optimize every step of your practice&apos;s
-                financial cycle. Our trusted solutions are built on years of
-                experience, helping healthcare providers improve cash flow,
-                reduce denials, and gain financial clarity.
+                At Codex Medical Management, we offer comprehensive Revenue
+                Management Services designed to optimize every step of your
+                practice&apos;s financial cycle. Our trusted solutions are built
+                on years of experience, helping healthcare providers improve
+                cash flow, reduce denials, and gain financial clarity.
               </p>
               <p className="text-gray-700 text-base leading-relaxed">
-                With specialized knowledge across multiple medical fields and
-                systems, we tailor our services to fit your unique workflow.
-                From eligibility checks to claims follow-up and reporting, every
-                process is streamlined for results. Backed by a proven track
-                record, Codex Billing ensures that your revenue cycle is managed
-                with precision, transparency, and consistent performance—so you
-                can focus on patient care.
+                Every healthcare practice is unique. That's why we customize our
+                solutions to fit your specialty, size, and systems. Whether
+                you're a solo provider, multi-site clinic, or expanding
+                organization, Codex Medical Management acts as a trusted
+                extension of your back office—delivering accuracy, transparency,
+                and efficiency at every step.
               </p>
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Fourth Section - Our Services */}
       <section className="w-full py-16">
@@ -372,7 +372,7 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Second card in second row - Virtual Medical Scribe Services */}
+            {/* Second card in second row - Authorization Service */}
             <div className="bg-white p-6 rounded-lg border border-transparent hover:border-gray-300 hover:shadow-xl transition-all duration-300">
               <div className="mb-4 flex justify-center">
                 <div
@@ -402,16 +402,17 @@ export default function Home() {
                 className="text-xl font-semibold mb-2 text-center"
                 style={{ color: "var(--secondary)" }}
               >
-                Virtual Medical Scribe Services
+                Authorization Services
               </h4>
               <p className="text-gray-600 text-center">
-                Our virtual scribes seamlessly integrate with your practice to
-                document patient encounters in real-time, allowing providers to
-                focus on patient care.
+                We assist practices in obtaining prior authorizations for
+                treatments, procedures, and medications—reducing delays,
+                improving approval rates, and ensuring smoother patient care
+                coordination.
               </p>
             </div>
 
-            {/* Third card in second row - Revenue Cycle Management Services */}
+            {/* Third card in second row - In-House Billing Team Transition Service */}
             <div className="bg-white p-6 rounded-lg border border-transparent hover:border-gray-300 hover:shadow-xl transition-all duration-300">
               <div className="mb-4 flex justify-center">
                 <div
@@ -441,12 +442,13 @@ export default function Home() {
                 className="text-xl font-semibold mb-2 text-center"
                 style={{ color: "var(--secondary)" }}
               >
-                Revenue Cycle Management Services
+                In House Billing Team Transition Services
               </h4>
               <p className="text-gray-600 text-center">
-                We manage the complete revenue cycle—from scheduling to
-                collections—to maximize income, improve cash flow, and reduce
-                administrative burdens.
+                We transition practices from outsourced to in-house billing in 6
+                months—handling hiring, training, and management. Afterward, you
+                can take over or keep Codex Medical Management for ongoing
+                support.
               </p>
             </div>
           </div>

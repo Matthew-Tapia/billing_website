@@ -30,8 +30,8 @@ export default function ClientNav() {
         justifyContent: "space-between",
         padding: "0 4vw",
         marginBottom: "3rem",
-        height: "56px",
-        minHeight: "56px",
+        height: "80px",
+        minHeight: "80px",
         color: "#555555",
         backgroundColor: "var(--secondary)",
         position: "relative",
@@ -108,10 +108,10 @@ export default function ClientNav() {
         </li>
         <li>
           <Link
-            href="/contact"
+            href="/benefits"
             style={{ color: "var(--primary)", fontSize: "0.875rem" }}
           >
-            Contact Us
+            Benefits
           </Link>
         </li>
         <li>
@@ -124,10 +124,10 @@ export default function ClientNav() {
         </li>
         <li>
           <Link
-            href="/benefits"
+            href="/contact"
             style={{ color: "var(--primary)", fontSize: "0.875rem" }}
           >
-            Benefits
+            Contact Us
           </Link>
         </li>
       </ul>
@@ -135,7 +135,7 @@ export default function ClientNav() {
       {/* Mobile menu dropdown - animated */}
       <div
         ref={menuRef}
-        className="absolute top-[56px] left-0 right-0 bg-[var(--secondary)] z-50 border-b border-[#e5e5e5] md:hidden overflow-hidden transition-all duration-300 ease-in-out"
+        className="absolute top-[80px] left-0 right-0 bg-[var(--secondary)] z-50 border-b border-[#e5e5e5] md:hidden overflow-hidden transition-all duration-300 ease-in-out"
         style={{
           maxHeight: `${menuHeight}px`,
           opacity: isOpen ? 1 : 0,
@@ -174,14 +174,14 @@ export default function ClientNav() {
           <div className="mx-4 h-[0.5px] bg-gray-200"></div>
           <li className="py-2 px-4 hover:bg-[rgba(0,0,0,0.05)] transition-colors duration-200">
             <Link
-              href="/contact"
+              href="/benefits"
               style={{
                 color: "var(--primary)",
                 fontSize: "0.875rem",
                 display: "block",
               }}
             >
-              Contact Us
+              Benefits
             </Link>
           </li>
           <div className="mx-4 h-[0.5px] bg-gray-200"></div>
@@ -200,14 +200,14 @@ export default function ClientNav() {
           <div className="mx-4 h-[0.5px] bg-gray-200"></div>
           <li className="py-2 px-4 hover:bg-[rgba(0,0,0,0.05)] transition-colors duration-200">
             <Link
-              href="/benefits"
+              href="/contact"
               style={{
                 color: "var(--primary)",
                 fontSize: "0.875rem",
                 display: "block",
               }}
             >
-              Benefits
+              Contact Us
             </Link>
           </li>
         </ul>
